@@ -1,0 +1,8 @@
+{
+  "name": "money-manager",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "288cf1d6"
+}

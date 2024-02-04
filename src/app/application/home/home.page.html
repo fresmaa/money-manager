@@ -1,18 +1,108 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
 <div class="ion-page" id="main-content">
   <ion-content [fullscreen]="true">
-    <!-- <ion-fab slot="fixed" vertical="bottom" horizontal="end">
-      <ion-fab-button (click)="optionButtonClick()">
-        <ion-icon name="add-outline"></ion-icon>
-      </ion-fab-button>
-    </ion-fab> -->
+    <div class="container">
+      <div class="profile-section">
+        <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex p-2 justify-between items-center">
+              <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Budi</h5>
+              <p class="primary-color text-sm">
+                04/02/2024
+              </p>
+          </div>
+          <hr class="w-48 h-1 mx-auto my-1 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+
+        </div>
+      </div>
+
+      <div class="latest-buying-section">
+        <div class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex items-center justify-between mb-4">
+              <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Latest</h5>
+              <a href="#" class="text-sm font-medium text-blue-600 hover:underline primary-color">
+                  View all
+              </a>
+        </div>
+        <div class="flow-root">
+              <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                  <li class="py-3 sm:py-4">
+                      <div class="flex items-center">
+                          <div class="flex-1 min-w-0 ms-4">
+                              <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                  Item A
+                              </p>
+                              <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                
+                              </p>
+                          </div>
+                          <div class="inline-flex font-medium items-center text-sm font-semibold text-gray-900 dark:text-white">
+                              Rp 10.000
+                          </div>
+                      </div>
+                  </li>
+                  <li class="py-3 sm:py-4">
+                      <div class="flex items-center ">
+                          <div class="flex-1 min-w-0 ms-4">
+                              <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                  Item B
+                              </p>
+                              <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                
+                              </p>
+                          </div>
+                          <div class="inline-flex font-medium items-center text-sm font-semibold text-gray-900 dark:text-white">
+                            Rp 15.000
+                          </div>
+                      </div>
+                  </li>
+                  <li class="py-3 sm:py-4">
+                      <div class="flex items-center">
+                          <div class="flex-1 min-w-0 ms-4">
+                              <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                  Item C
+                              </p>
+                              <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                  
+                              </p>
+                          </div>
+                          <div class="inline-flex font-medium items-center text-sm font-semibold text-gray-900 dark:text-white">
+                            Rp 20.000
+                          </div>
+                      </div>
+                  </li>
+                  <li class="py-3 sm:py-4">
+                      <div class="flex items-center ">
+                          <div class="flex-1 min-w-0 ms-4">
+                              <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                Item D
+                              </p>
+                              <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                  
+                              </p>
+                          </div>
+                          <div class="inline-flex font-medium items-center text-sm font-semibold text-gray-900 dark:text-white">
+                            Rp 25.000
+                          </div>
+                      </div>
+                  </li>
+                  <li class="pt-3 pb-0 sm:pt-4">
+                      <div class="flex items-center ">
+                          <div class="flex-1 min-w-0 ms-4">
+                              <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                Item D
+                              </p>
+                              <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                  
+                              </p>
+                          </div>
+                          <div class="inline-flex font-medium items-center text-sm font-semibold text-gray-900 dark:text-white">
+                            Rp 30.000
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+        </div>
+        </div>
+      </div>
+    </div>
   </ion-content>
 </div>
-<app-tab-menu></app-tab-menu>

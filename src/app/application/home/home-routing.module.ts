@@ -8,15 +8,24 @@ const routes: Routes = [
     path: '',
     component: HomePage,
     children: [
+      // {
+      //   path: '',
+      //   children: [
+      //     {
+      //       path: '',
+      //       loadChildren: () => import('../home/home.module').then((m) =>m.HomePageModule),
+      //     },
+      //   ],
+      // },
       {
-        path: 'testing',
+        path: 'report',
         children: [
           {
             path: '',
             loadChildren: () => import('../report/report.module').then((m) =>m.ReportPageModule),
           },
         ],
-      },
+      }
     ]
   }
 ];

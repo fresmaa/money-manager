@@ -24,3 +24,119 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Nunito-basic";
+    src: url('./assets/fonts/Nunito/Nunito-Black.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito-regular";
+    src: url('./assets/fonts/Nunito/Nunito-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url('./assets/fonts/Nunito/Nunito-BlackItalic.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url('./assets/fonts/Nunito/Nunito-Bold.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url('./assets/fonts/Nunito/Nunito-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url('./assets/fonts/Nunito/Nunito-BoldItalic.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Nunito-regular';
+}
+
+ion-toolbar {
+    border-radius: 0 0 20px 20px;
+    --background: #4b38d3;
+    --opacity: none !important;
+    color: #fff;
+}
+
+ion-header {
+    background: #fff;
+}
+
+ion-menu-button {
+    color: #fff !important;
+}
+
+ion-modal {
+    --background: none;
+
+    ion-content {
+        --background: none !important;
+        .content-section {
+            background-color: #FFFF;
+            padding: 33px;
+
+            .icon-section {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            } 
+
+            .description-section {
+                color: black;
+                text-align: center;
+                font-family: 'Nunito-regular';
+            }
+
+            .button-section {
+                ion-button {
+                    --background: #3DA69C;
+                }
+            }
+        }
+    }
+
+    ion-content::part(scroll) {
+        padding-top: 0px !important;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .ion-padding {
+        padding-top: 0px;
+    }
+
+    ion-toolbar {
+        --background: none;
+        border-top-right-radius: 35px;
+        border-top-left-radius: 35px;
+
+        ion-title {
+            font-family: 'Nunito-regular';
+            text-align: center;
+        }
+    }
+}

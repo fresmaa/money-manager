@@ -26,3 +26,13 @@ ion-menu-button {
 #container a {
   text-decoration: none;
 }
+
+ion-fab {
+  display: flex;
+  position: fixed;
+
+  .ion-activatable::part(native) {
+      background: var(--ion-color-primary) !important;
+      color: #fff;
+  }
+}
